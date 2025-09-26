@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .nav-link {
+    @apply text-gray-700 px-3 py-2 rounded-md text-sm font-medium duration-200 ease-in-out hover:text-gray-900 active:text-blue-500 active:scale-100;
+  }
+  .span-word {
+    @apply text-lime-600 font-bold underline;
+  }
+  .image {
+    @apply rounded-lg shadow-lg duration-200 ease-in-out max-w-[290px] mb-5 hover:shadow-xl;
+  }
+  .p-image {
+    @apply text-xl font-semibold text-gray-700;
+  }
+}
+
+/* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
